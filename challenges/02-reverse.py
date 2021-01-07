@@ -6,3 +6,14 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+user_input = input('What string would you like to reverse? ')
+
+def reverse_for_loop(s):
+    s1 = ''
+    for c in s:
+        s1 = c + s1
+    return s1
+
+if __name__ == '__main__':
+    print(reverse_for_loop(user_input))
